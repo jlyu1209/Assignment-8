@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>PUI HW8 Reducing Waste</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <!--Greensock-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js" integrity="sha512-FtkvR55hPH9dKb4c5j71UgIV8ut79QpPNo4tiJUPXk8fKMmCdmZk9o8/sxpYONZIVJyw3T3KqzAZ2YFEZRWc+g==" crossorigin="anonymous"></script>
+        <!--Google Font: Roboto and Nanum Gothic-->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">         
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet"> 
+        <!--Fontawesome and css style sheet-->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <!--Javascript-->
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+          <div class ="container-fluid">
+            <a class ="navbar-brand" href ="#"><img class = "logo" src="PlanetEarth.jpg" alt= "Planet Earth" width="50" height= "50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <!--aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+              <span class="navbar-toggler-icon"></span>
+            </button>           
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">STATS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GO GREEN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRACTICE</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+      <div class = "HomeBodyText">
+        <div class = "HomeBodyText_header"><h1>REDUCING WASTE</h1></div>
+        <br>
+        <div class = "HomeBodyText_text"><p>We are all connected. Waste contaminates the air we breathe, the water we drink, the soil we use to grow food and introduces harmful substance to the environment. It can lead to serious problems not just to humans but other species and make us more susceptible to harmful diseases. Humans create the most waste and we’re the only ones that can undo it. </p></div>
+      </div>
+
+      <div class = "Pic-LearnMore">
+        <img id = "homeimg" src="Go Green Crop2.png" class="img-fluid" alt="Responsive image: Green Environment">
+        <br>
+        <br>
+        <div class = "text-arrow" id = "learnMore-text">
+          <div class = "text"><h2>LEARN MORE</h2></div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <br>
+
+      <div class = "stat_header">STATISTICS</div>
+      <div id="statSlides" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#statSlides" data-slide-to="0" class="active"></li>
+          <li data-target="#statSlides" data-slide-to="1"></li>
+          <li data-target="#statSlides" data-slide-to="2"></li>
+          <li data-target="#statSlides" data-slide-to="3"></li>
+          <li data-target="#statSlides" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="Waste.jpg" alt="First slide">
+            <div class = "carousel-caption">
+                <h3 class = "numbers">01 | </h3>
+                <p class = "statText" id = "statText1">An average American produces roughly 4 pounds of trash per day. In a year, that’s enough trash to circle the Earth 24 times. </p> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Waste not recycled.jpg" alt="Second slide">
+            <div class = "carousel-caption">
+              <h3 class = "numbers">02 | </h3>
+              <p class = "statText" id = "statText2">EPA estimates that 75% of Americans waste is recyclable but we only recycle 30% of it. </p> 
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Food trash.jpg" alt="Third slide">
+            <div class = "carousel-caption">
+              <h3 class = "numbers">03 | </h3>
+              <p class = "statText" id = "statText3">We throw away 7.2 million tons of food every year, and more than 50% of it is perfectly edible. Meanwhile, 1 in 7 people across the world don't have enough to eat.  </p> 
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="WaterWaste2.png" alt="Fourth slide">
+            <div class = "carousel-caption">
+              <h3 class = "numbers">04 | </h3>
+              <p class = "statText" id = "statText4">We buy a million plastic bottles a minute. Plastic is forever and most of it will end up in the ocean. By 2050, it is estimated that the ocean will contain more plastic by weight than fish. </p> 
+          </div> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Air Pollution.jpg" alt="Fifth slide">
+            <div class = "carousel-caption">
+              <h3 class = "numbers">05 | </h3>
+              <p class = "statText" id = "statText5">40% of death worldwide are caused by water, air, and soil pollution</p> 
+          </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#statSlides" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#statSlides" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <br>
+      <br>
+
+      <div class = "text-arrow">
+        <div class = "text" id = "waysToReduce-text"><h2>WAYS TO REDUCE WASTE</h2></div>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      
+      <br>
+      <br>
+
+      <div class = "RRR-container">
+
+        <div class = "RRR_header">HOW CAN WE GO GREEN IN EVERDAY LIFE?</div>
+        <br> 
+
+        <div class = "Reduce-container">
+          <div class = "row">
+            <div class = "col-lg-6">
+              <h1 class = "green-header"><b>RE</b>DUCE</h1>
+              <hr>
+              <p class = "intro-text" id= "reduce-text">The best way to reduce waste is to not create it in the first place. Here are some simple daily tipes to reduce waste.</p>
+              <ul class = "container-bullets">
+                <li>Purchase your products more wisely. Look out for products  with less packaging. You can also avoid packaging by buying in bulk.</li>
+                <li>Buy less or not at all. Say no to trends and think twice. A lot of the times, things we buy may not be things we actually need.</li>
+                <li>Reduce food waste. Meal plan in advance to avoid overbuying. Store your left-over and eat it the next day. Freeze your goods.</li>
+              </ul>  
+            </div>
+            <div class = "col-lg-6 order-first">
+              <img class ="RRR-img img-fluid" id= "Reduce-img" src = "Reduce.jpg">
+            </div>
+          </div>
+        </div>
+
+
+        <br>
+        <br>
+
+
+        <div class = "Reuse-container">
+          <div class = "row">
+            <div class = "col-lg-6 order-first">
+              <img class ="RRR-img img-fluid" id= "Reuse-img" src = "Reuse2h.jpg">
+            </div>
+            <div class = "col-lg-6">
+              <h1 class = "green-header"><b>RE</b>USE</h1>
+              <hr>
+              <p class = "intro-text" id= "reuse-text">Reusing an item saves about 20 times as much energy as recycling it. So many of the things we use can be used more than once. </p>
+
+              <ul class = "container-bullets">
+                <li>Avoid single use items. These things include things such as plastic straws, plates, and cups. Get in the habbit of carrying around your own reusable water bottle or eco-bag. </li>
+                <li>Save your budget and consider buying second-hand. 
+                  You may be surprised by the variety and how well maintained things are.</li>
+                <li>Buy items that contain recycled material.</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+
+        <div class = "Recycle-container">
+          <div class = "row">
+            <div class = "col-lg-6">
+              <div class = "header-button">
+                <h1 class = "green-header"><b>RE</b>CYCLE</h1>
+                <button type="button" class="btn btn-recycle">Learn More</button>
+              </div>
+              <hr>
+              <p class = "intro-text" id= "recycle-text">When U.S. recycling level reaches 75%, it will be equivalent of removing 55 million cars from the U.S. roads each year and generate 1.5 million new jobs. Yet only 21.4% of Americans recycle properly. The public is still confused about what items are recyclable.  </p>
+              <ul class = "container-bullets">
+                <li>Paper, cardboard, glass bottles and jars, metal containers, and plastic products are all be recyclable. </li>
+                <li>Make sure to wash items so there are no food waste on it. It can’t be recycled if it’s contaminated. </li>
+                <li>Do not put recyclables in plastic bag. It can’t be recycled inside a plastic bag. Opt out for an open paper bag instead. </li>
+              </ul>  
+            </div>
+            <div class = "col-lg-6">
+              <img class ="RRR-img img-fluid" id= "Recycle-img" src = "Recycle.jpg">
+            </div>
+          </div>
+        </div>
+        
+
+        <br>
+        <br>
+
+
+
+        <div class = "Compost-container">
+          <div class = "row">
+            <div class = "col-lg-6">
+              <img class ="RRR-img img-fluid" id= "Compost-img" src = "Composting.jpg">
+            </div>
+            <div class = "col-lg-6">
+              <div class = "header-button">
+                <h1 class = "green-header"><b>AND</b> COMPOST</h1>
+                <button type="button" class="btn btn-compost">Learn More</button>
+              </div>
+              <hr>
+              <p class = "intro-text" id= "compost-text">30% of the things we throw away are compostable. Compost is organic material that can be added to soil to help plants grow. </p>
+              <ul class = "container-bullets">
+                <li> Rule of thumb: Anything grown naturally from ground can be compostable. This means cooked or processed foods are not.</li>
+                <li> Your compost pile should have an equal amount of browns to greens. Browns include materials such as dead leaves, branches, and twigs. Green materials include items such as coffee grounds, clippings, vegetable waste, and fruit scraps. </li>
+                <li> Store your compost in dry and cool area. Moisture is key to composting so wet your compost with water from time to time. </li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <br>
+      
+
+      <div class = "text-arrow">
+        <div class= "text"  id = "practice-text"><h2>PRACTICE MAKES PERFECT</h2></div>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+
+
+
+    
+      <div class = "container-sm" id= "game-container">
+
+        <div class = "game-prompt"> TRASH? RECYCLE? COMPOST? </div>
+        <div class = "game-object" id="object" data-identifier="egg-shells">
+            <img class = "object-img" src ="Cracked Egg Shells.jpg"  alt = "Cracked Egg Shells" > 
+            <p id = "object-label">Cracked egg shells</p>
+      
+        </div>
+
+        <button id="next"> Next item</button>
+
+        <br>
+        <br>
+    
+        <div class = "answer-key">
+
+            <div class="dot" id ="trash"> 
+              <div class = "img-label" id = "trashLabel"> 
+                <i class="far fa-trash-alt fa-6x"></i>
+                <h4>TRASH</h4>
+              </div>
+              <span class="answer-feedback"></span>
+            </div> 
+       
+            <div class="dot" id ="recycle">
+              <div class = "img-label" id = "recyleLabel"> 
+                <i class="fas fa-recycle fa-6x"></i></i>
+                <h4>RECYCLE</h4>
+              </div>
+              <span class="answer-feedback"></span>
+            </div> 
+ 
+            <div class="dot" id ="compost">
+              <div class = "img-label" id= "compostLabel"> 
+                <i class="fab fa-canadian-maple-leaf fa-7x"></i>
+                <h4>COMPOST</h4>
+              </div>
+              <span class="answer-feedback"></span>
+            </div>
+
+        </div>
+      </div>
+
+    </body>
+
+</html>

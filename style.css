@@ -1,0 +1,233 @@
+.navbar {
+    padding: 0.2rem;
+    background-color: white;
+}
+
+a.nav-item {
+    font-size: 5px;
+    font-family: "Roboto";
+    color: #3ECC77;
+}
+
+.HomeBodyText {
+    text-align: center;
+    padding: 10% 10% 0% 10%;
+
+}
+
+.HomeBodyText_header {
+    font-family: "Nanum Gothic";
+    font-weight: 800;
+    color: #347E49;
+}
+
+
+.HomeBodyText_text {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.numbers {
+    font-style: "Nanum Gothic";
+    background-color: #347E49;
+    color: white;
+    font-size: 400%;
+}
+
+.statText {
+    font-style: "Roboto";
+    font-weight: 100;
+    color: #347E49;
+    font-size: 200%;
+    background-color: white;
+}
+
+.stat_header {
+    padding-left: 2%;
+    font-size: 150%;
+
+}
+
+
+.RRR-container {
+    padding: 3%;
+}
+
+
+.RRR-img {
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 480px; /* Set a small width */
+    height: 447px;
+    clip: rect(0px,60px,200px,0px);
+    margin: 0 auto;
+}
+
+
+.green-header {
+    font-family: "Nanum Gothic";
+    color: #347E49;
+
+}
+
+.header-button {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.intro-text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.container-bullets {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 90%;
+}
+
+ul li { 
+    padding: 10px 0px; 
+}
+
+.btn {
+    background-color: #347E49;
+    color: white;
+    height: 40px;
+
+}
+
+.text-arrow {
+    text-align: center;
+    color: #347E49;
+    font-family: "Nanum Gothic";
+    font-size: 5vw;
+
+}
+
+.text {
+    font-size: 1vw;
+}
+
+/*#learnMore-text {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}*/
+
+#game-container {
+    padding: 5%;
+}
+
+.game-object {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+
+/* .answer-key-img {
+    border-radius: 4px; 
+    padding: 5px; 
+    width: 270px;
+    height: 270px;
+    clip: rect(0px,60px,200px,0px);
+    margin: 0 auto;
+}*/
+
+.answer-key {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    position: relative;
+    height: 17vw;
+    width: 17vw;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    overflow: visible;
+}
+
+.dot .answer-feedback {
+    visibility: hidden;
+}
+
+.dot .answer-feedback.visible {
+    visibility: visible;
+}
+
+.img-label {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+  }
+
+.img-label.hidden {
+    visibility: hidden;
+}
+
+#recycle {
+    background-color: #0B3399;
+}
+
+#compost {
+    background-color: #FF7C02;
+}
+
+.correct-dot {
+    background-color: #04641F;
+}
+
+.wrong-dot {
+    background-color: #D94949;
+}
+
+
+@media only screen and (max-width: 960px){
+    .numbers {
+        font-size: 200%;
+    }
+
+    .statText{
+        font-size: 150%;
+    }
+
+
+}
+
+@media only screen and (max-width: 720px){
+    .numbers {
+        font-size: 150%;
+    }
+
+    .statText{
+        font-size: 60%;
+    }
+
+    .HomeBodyText_text {
+        font-size: 50%;
+    }
+
+
+}
