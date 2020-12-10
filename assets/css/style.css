@@ -231,7 +231,7 @@ ul li {
 }
 
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 992px){
     .numbers {
         font-size: 200%;
     }
@@ -240,9 +240,14 @@ ul li {
         font-size: 150%;
     }
 
+    .RRR-img {
+        width: 900px;
+        height: 700px;
+    }
+
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 768px){
     .numbers {
         font-size: 150%;
     }
@@ -254,13 +259,59 @@ ul li {
     .HomeBodyText_text {
         font-size: 50%;
     }
-
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 576px){
 
     .statText{
         font-size: 30%;
     }
+
+    #object-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .dot{
+        height: 150px;
+        width: 150px;
+    }
+
+    .dot-label{
+        font-size: 15px;
+
+    }
+
+    .img-label {
+        height: 50%;
+        width: 50%;
+    }
+
+    .RRR-img {
+        width: 900px;
+        height: 300px;
+    }
+
+    .dot .answer-feedback.visible {
+        font-size: 9px;
+    }
+
+
+    .fa-trash-alt {
+        font-size: 60px;
+
+    }
+
+    .fa-recycle {
+        font-size: 60px;
+
+    }
+
+    .fa-canadian-maple-leaf {
+        font-size: 60px;
+
+    }
+
+
 
 }

@@ -2,7 +2,7 @@ jQuery(function() {
     gsap.set($("#homeimg"), {css: {opacity: 0}});
     gsap.to($("#homeimg"), {css: {opacity: 1},
                             duration: 1,
-                            delay: 1});
+                            delay: 2});
 });
 
 
