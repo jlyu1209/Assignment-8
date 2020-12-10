@@ -10,19 +10,36 @@ var answers = [
     {
         label: "Cracked Egg Shells",
         correctAnswer: "compost",
-        feedback: "That's right! Egg shells are rich source of calcium and other essential nutrients that plants need."
+        feedback: "That's right! Egg shells are rich source of calcium and other essential nutrients that plants need.",
+        objectImg: "assets/img/Cracked Egg Shells.jpg"
     },
     {
         label: "Plastic Cups",
         correctAnswer: "trash",
         feedback: "That's right! Single-use plastic cups have polyethylene lining which can not be recycled nor composted.",
-        objectImg: "Plastic Cups.jpg"
+        objectImg: "assets/img/Plastic cups.jpg"
     }, 
     {
         label: "Soiled Pizza Box",
         correctAnswer: "trash",
-        feedback: "That's right! The grease in the soiled pizza box makes it hard to recycle or compost."
-    } 
+        feedback: "That's right! The grease in the soiled pizza box makes it hard to recycle or compost. Any soiled cardboard might damage the recycling equiment or contaminate other materials.",
+        objectImg: "assets/img/Greasy_PizzaBox.jpg"
+
+    },
+    {
+        label: "Coffee Grounds",
+        correctAnswer: "compost",
+        feedback: "That's right! Coffee grounds are excellent source of nitrogen for the soil and make suitable compost material.",
+        objectImg: "assets/img/Coffee Grounds.jpg"
+
+    },
+    {
+        label: "Natural Corks",
+        correctAnswer: "compost",
+        feedback: "That's right! As long as the cork is not plastic or metal, you can break down natural corks for compost. They can be recycled BUT only through special recycling programs.",
+        objectImg: "assets/img/Natural Corks.jpg"
+
+    },
 ];
 
 var index = 0;
@@ -45,13 +62,11 @@ function checkCorrectness(object, response) {
 
     if (correctAnswer === response.id) {
         feedback.innerHTML = String(answers[index].feedback);
-        //insideDot.innerHTML = answers[identifier].feedback;
         //console.log(answers[index].feedback);
 
        
     } else {
         feedback.innerHTML = "Nice try but not quite. Try again!";
-        //insideDot.innerHTML = "Nice try but not quite. Try again"
         //console.log("Nice try but not quite. Try again!");
     }
 }
@@ -104,7 +119,7 @@ window.onload = function() {
 
         if (index >= answers.length) {
             index = 0;
-        }
+        };
 
         var label = object.querySelector("#object-label");
         label.innerText = answers[index].label;
@@ -112,14 +127,17 @@ window.onload = function() {
         var objImg = object.querySelector("#object-img");
         objImg.src = answers[index].objectImg;
      
-        //object.dataset.identifier = nextData ();
-        //object.dataset.identifier = "plastic-cups";
-        //object.src = "Plastic Cups.jpg"; Why does this not work?
-        //object.textContent = nextObject ();
-        // object.textContent = "Plastic Cups";
-    }
+    };
+
+    var recycleBtn = document.querySelector("#btn-recycle");
+    recycleBtn.onclick = function (e) {
+        location.href = "https://www.epa.gov/recycle/recycling-basics";
+    };
+
+    var compostBtn = document.querySelector("#btn-compost");
+    compostBtn.onclick = function (e) {
+        location.href = "https://www.epa.gov/recycle/composting-home";
+    };   
+
+
 };
-
-// add image to object list and swipe images. 
-
-

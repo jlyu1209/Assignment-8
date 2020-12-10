@@ -1,6 +1,15 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 .navbar {
     padding: 0.2rem;
     background-color: white;
+}
+
+.downArrow {
+    color: #347E49;
 }
 
 a.nav-item {
@@ -140,6 +149,7 @@ ul li {
     margin: auto;
     width: 60%;
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -159,8 +169,10 @@ ul li {
 
 .dot {
     position: relative;
-    height: 17vw;
-    width: 17vw;
+    height: 250px;
+    width: 250px;
+    /*height: 17vw;
+    width: 17vw;*/
     border-radius: 50%;
     background-color: black;
     display: inline-block;
@@ -168,10 +180,16 @@ ul li {
 }
 
 .dot .answer-feedback {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
     visibility: hidden;
 }
 
 .dot .answer-feedback.visible {
+    font-size: 13px;
     visibility: visible;
 }
 
@@ -185,6 +203,15 @@ ul li {
 
 .img-label.hidden {
     visibility: hidden;
+}
+
+#object-img {
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 300px; /* Set a small width */
+    height: 300px;
+    clip: rect(0px,60px,200px,0px);
+    margin: 0 auto;
 }
 
 #recycle {
@@ -213,7 +240,6 @@ ul li {
         font-size: 150%;
     }
 
-
 }
 
 @media only screen and (max-width: 720px){
@@ -229,5 +255,12 @@ ul li {
         font-size: 50%;
     }
 
+}
+
+@media only screen and (max-width: 480px){
+
+    .statText{
+        font-size: 30%;
+    }
 
 }
