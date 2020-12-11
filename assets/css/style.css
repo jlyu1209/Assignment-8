@@ -169,7 +169,7 @@ ul li {
 
 .dot {
     position: relative;
-    height: 250px;
+    /*height: 250px;*/
     width: 250px;
     /*height: 17vw;
     width: 17vw;*/
@@ -177,6 +177,12 @@ ul li {
     background-color: black;
     display: inline-block;
     overflow: visible;
+}
+
+.dot::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
 }
 
 .dot .answer-feedback {
@@ -273,7 +279,7 @@ ul li {
     }
 
     .dot{
-        height: 150px;
+        /*height: 150px;*/
         width: 150px;
     }
 
@@ -294,21 +300,22 @@ ul li {
 
     .dot .answer-feedback.visible {
         font-size: 9px;
+        width:75px;
     }
 
 
     .fa-trash-alt {
-        font-size: 60px;
+        font-size: 40px;
 
     }
 
     .fa-recycle {
-        font-size: 60px;
+        font-size: 40px;
 
     }
 
     .fa-canadian-maple-leaf {
-        font-size: 60px;
+        font-size: 40px;
 
     }
 
